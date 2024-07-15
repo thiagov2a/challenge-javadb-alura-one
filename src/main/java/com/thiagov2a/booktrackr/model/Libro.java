@@ -12,7 +12,7 @@ public class Libro {
     private String titulo;
     private Double descargas;
     private String idioma;
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     private Autor autor;
 
     public Libro() {
@@ -74,7 +74,7 @@ public class Libro {
 
     @Override
     public String toString() {
-        return "Libro: " + titulo +
+        return titulo +
                " (" + autor.getNombre() + ")" +
                " [" + idioma + "]" +
                " | Descargas: " + descargas;

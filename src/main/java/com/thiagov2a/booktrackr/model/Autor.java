@@ -78,6 +78,6 @@ public class Autor {
     public String toString() {
         String anioNacimiento = this.anioNacimiento != null ? this.anioNacimiento.toString() : "desconocido";
         String anioFallecimiento = this.anioFallecimiento != null ? this.anioFallecimiento.toString() : "desconocido";
-        return "Autor: " + nombre + " (" + anioNacimiento + "-" + anioFallecimiento + ")";
+        return nombre + " (" + anioNacimiento + "-" + anioFallecimiento + ")";
     }
 }
